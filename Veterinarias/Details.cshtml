@@ -1,0 +1,48 @@
+﻿@model ExamenProgreso1_EgasW.Models.Veterinaria
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Veterinaria</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.fechadevisita)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.fechadevisita)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.motivovisita)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.motivovisita)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.nombreVeterinario)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.nombreVeterinario)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.vacunas)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.vacunas)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.costo)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.costo)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
